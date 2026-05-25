@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional portfolio of Timofey Bubalo - Full-stack developer with expertise in web technologies and cross-platform development.">
+    <meta name="theme-color" content="#000000">
+    <link rel="icon" href="Images/TitleLogo.png" type="image/png">
+    <link rel="stylesheet" href="{{ url_for('static', filename='Stars_body.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='Sections.css') }}">
+    <script src="{{ url_for('static', filename='StarsScript.js') }}" defer></script>
+    <title>Timofey Bubalo - Full-Stack Developer Portfolio</title>
+</head>
+<body>
+    <canvas id="starsCanvas" aria-hidden="true"></canvas>
+    <header role="banner">
+        <nav aria-label="Main navigation">
+            <ul class="nav-links">
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#UrRequest" class="nav-link">Request</a></li>
+            </ul>
+        </nav>
+        <h1 class="Hi">Portfolio</h1>
+    </header>
+    <main class="stars-container"> 
+        <div class="Skills" id="skills">
+            <div class="HardSkills">
+                <h2 class="HardSkillsTitle">Hard Skills</h2>
+                <ul class="HardSkillsList">
+                    <li >HTML</li>
+                    <li >CSS</li>
+                    <li >JavaScript</li>
+                    <li >Python</li>
+                    <li >C#</li>
+                    <li >Java</li>
+                    <li >Telegram Bots</li>
+                </ul>
+            </div>
+            <div class="SoftSkills">
+                <h2 class="SoftSkillsTitle">Soft Skills</h2>
+                <ul class="SoftSkillsList">
+                    <li >Problem Solving</li>
+                    <li >Communication</li>
+                    <li >Teamwork</li>
+                    <li >Time Management</li>
+                    <li >Critical Thinking</li>
+                    <li >Adaptability</li>
+                </ul>
+            </div>
+            <div class="Info">
+                <h2 class="InfoTitle">Info</h2>
+                <ul class="InfoList">
+                    <li >Name: Timofey Bubalo</li>
+                    <li >Live: Israel</li>
+                    <li >Speciolization: WebSites</li>
+                </ul>
+            </div>
+        </div>
+        <div id="projects" class="Projects">
+                <h1 class="ProjectsTitle">Projects</h1>
+                <p>(Click on the name of a project to get in its GitHub)</p>
+                <ul class="ProjectsList">
+                    <li><a href="https://github.com/SrTikva" target="_blank"><span>Coming Soon</span> = explanation about the project</a></li>
+                    <li><a href="https://github.com/SrTikva" target="_blank"><span>Coming Soon</span> = explanation about the project</a></li>
+                    <li><a href="https://github.com/SrTikva" target="_blank"><span>Coming Soon</span> = explanation about the project</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="ContactRequest">
+            <div id="contact">
+                <h1 class="ContactTitle">Contact</h1>
+                <ul class="ContactList">
+                    <li><a href="https://github.com/SrTikva" target="_blank">GitHub</a></li>
+                    <li><a href="https://t.me/KuurKieBDB" target="_blank">Telegram</a></li>
+                    <li>bubalotima93@gmail.com</li>
+                </ul>
+            </div>
+            <div class="rebutton" id="UrRequest">
+                <h2 class="inTitle">Request</h2>
+                <form class="userForm" method="POST" action="/">
+                    <input class="userBut" type="text" name="username" placeholder="Write your name" required>
+                    <input class="userBut" type="Text" name="request" placeholder="Write your request in short" required>
+                    <input class="userBut" type="Text" name="tgacc" placeholder="Telegram username" required>
+                    <input class="userBut" type="number" name="price" placeholder="price(in)" required>                    
+                    <button class="subBut" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </main> 
+    <footer>    
+        
+    </footer>
+</body>
+</html>
